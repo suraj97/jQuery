@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> jQuery Document Ready Demo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#flip").click(function() {
+                    $("#panel").slideToggle("");
+                });
+            });
+            </script>
+            <style>
+                #panel,#flip
+                {
+                    padding: 5px;
+                    text-align: center;
+                    background-color: #ade21a;
+                    border: solid 1px #c3c3c3;
+                }
+                #panel
+                {
+                    padding: 50px;
+                    display: none;
+                }
+
+            </style>
+    </head>
+    <body>
+        <div id="flip"> Click to slide up or down</div>
+        <div id="panel"> Hello viruses!</div>
+    </body>
+</html>
